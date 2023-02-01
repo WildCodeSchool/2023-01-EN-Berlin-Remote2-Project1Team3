@@ -6,11 +6,14 @@ body {
   background-color: rgb(253, 246, 246);
 }
 
+header {
+  margin-left: 5%;
+}
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .logo {
@@ -91,7 +94,7 @@ nav {
 .title {
   margin-top: 150px;
   line-height: 35px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .line1,
