@@ -173,7 +173,8 @@ hr {
 .container {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
-  margin-left: 1.6rem;
+  margin-left: auto;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -188,47 +189,37 @@ hr {
 .container img {
   height: 100px;
   width: 100px;
-  animation: spin 5s infinite;
 }
 
-@keyframes spin {
+.img1,
+.img4,
+.img5,
+.img8 {
+  animation: spin_1 5s infinite;
+}
+
+@keyframes spin_1 {
   from {
-    transform: rotate(0deg);
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+.img2,
+.img3,
+.img6,
+.img7 {
+  animation: spin_2 5s infinite;
+}
+
+@keyframes spin_2 {
+  from {
+    transform: rotate(0);
   }
   to {
     transform: rotate(359deg);
   }
-}
-
-.object1 {
-  border-right: 2px dotted black;
-  border-bottom: 2px dotted black;
-}
-
-.object2 {
-  border-bottom: 2px dotted black;
-}
-
-.object3 {
-  border-right: 2px dotted black;
-  border-bottom: 2px dotted black;
-}
-
-.object4 {
-  border-bottom: 2px dotted black;
-}
-
-.object5 {
-  border-right: 2px dotted black;
-  border-bottom: 2px dotted black;
-}
-
-.object6 {
-  border-bottom: 2px dotted black;
-}
-
-.object7 {
-  border-right: 2px dotted black;
 }
 
 .meetus {
@@ -236,7 +227,7 @@ hr {
   margin-bottom: 4rem;
   text-align: center;
   margin-left: 20px;
-  width: 20rem;
+  width: 90%;
 }
 
 h2 {
