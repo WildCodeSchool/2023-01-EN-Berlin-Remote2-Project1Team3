@@ -169,3 +169,32 @@ hr {
   border: 0.1rem solid black;
   width: 90%;
 }
+
+/* This is Lisas Container Part*/
+
+.cards {
+  display: flex;
+  flex-direction: column;
+   padding: 10px;
+   Margin-top:100px;
+   width: 340px;
+   height: 500px;
+   object-fit: cover;
+   border-radius: 40px;
+   margin-right: auto;
+   margin-left:auto;
+   cursor: pointer;
+   background-color:antiquewhite;
+   justify-content:flex-start;
+   text-align: center;
+          
+  }
+  
+  .cards {
+  transition: width 0.5s ease-in-out;
+   }
+  
+  .cards:hover {
+  height: 800px;
+  }
+   
