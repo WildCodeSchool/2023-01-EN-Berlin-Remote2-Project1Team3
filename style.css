@@ -44,7 +44,7 @@ nav {
   display: none;
   position: absolute;
   background-color: rgb(253, 246, 246);
-  min-width: 160px;
+  min-width: 67px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -52,7 +52,7 @@ nav {
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   display: block;
   text-align: left;
