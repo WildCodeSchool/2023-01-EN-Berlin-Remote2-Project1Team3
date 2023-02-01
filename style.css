@@ -169,3 +169,81 @@ hr {
   border: 0.1rem solid black;
   width: 90%;
 }
+
+.container {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  margin-left: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container > * {
+  padding: 1.5rem;
+  height: 100px;
+  width: 100px;
+}
+
+.container img {
+  height: 100px;
+  width: 100px;
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.object1 {
+  border-right: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+
+.object2 {
+  border-bottom: 2px dotted black;
+}
+
+.object3 {
+  border-right: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+
+.object4 {
+  border-bottom: 2px dotted black;
+}
+
+.object5 {
+  border-right: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+
+.object6 {
+  border-bottom: 2px dotted black;
+}
+
+.object7 {
+  border-right: 2px dotted black;
+}
+
+.meetus {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  margin-left: 20px;
+  width: 20rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.meetus > p {
+  font-style: italic;
+}
