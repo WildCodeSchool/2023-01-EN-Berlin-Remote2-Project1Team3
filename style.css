@@ -214,6 +214,7 @@ hr {
   width: 90%;
 }
 
+
 .container {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
@@ -282,3 +283,112 @@ h2 {
 .meetus > p {
   font-style: italic;
 }
+
+/* This is Lisas Part*/
+
+.cardscontainer {
+  width:90vp;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+   padding: 20px;
+   Margin-top:100px;
+   width: 1;
+   height: 550px;;
+   border-radius: 40px;
+   margin-right: auto;
+   margin-left:auto;
+   cursor: pointer;
+   background-color:antiquewhite;
+   justify-content:flex-start;
+   text-align: left;
+   transition: all 0.5s linear;  
+   overflow:hidden;
+  }
+
+  .card h2 {
+  margin-bottom: 20px;
+  }
+
+  .card p {
+    line-height:15px;
+  }
+
+  .card a {
+  text-decoration-color: black;
+  color: black;
+  }
+
+  .icons {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    
+  }
+
+  .icons img {
+    height:30px;
+    margin-right:10px;
+  }
+  
+
+  
+  
+   .active {
+    height: 800px;
+   }
+
+   .photocircle {
+    object-fit:none;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    margin-left: 50%;
+    margin-top: 20px;
+    opacity:0.5;
+
+   }
+
+.slideshow-container {
+    margin-top:30px;
+    position: relative;
+}
+
+.mySlides {
+  display: none;
+  padding: 50px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
