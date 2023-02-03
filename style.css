@@ -199,7 +199,6 @@ span {
 }
 
 .welcometext > p {
-  margin-top: ;
   font-size: 0.6 rem;
   width: 60%;
   margin-left: 20px;
@@ -287,22 +286,22 @@ h2 {
 /* This is Lisas Part*/
 
 .cardscontainer {
-  width:90vp;
+  width:100%;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
    padding: 20px;
    Margin-top:100px;
-   width: 1;
-   height: 550px;;
+   height: 550px;
+   width: 90%;
    border-radius: 40px;
    margin-right: auto;
    margin-left:auto;
    cursor: pointer;
    background-color:antiquewhite;
-   justify-content:flex-start;
    text-align: left;
    transition: all 0.5s linear;  
    overflow:hidden;
@@ -333,11 +332,8 @@ h2 {
     margin-right:10px;
   }
   
-
-  
-  
    .active {
-    height: 800px;
+    height:800px;
    }
 
    .photocircle {
@@ -349,7 +345,6 @@ h2 {
     margin-left: 50%;
     margin-top: 20px;
     opacity:0.5;
-
    }
 
 .slideshow-container {
@@ -390,5 +385,3 @@ h2 {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
-
-

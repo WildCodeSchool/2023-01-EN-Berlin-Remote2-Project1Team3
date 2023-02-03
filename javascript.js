@@ -1,4 +1,3 @@
-
 let cardsElement = document.querySelectorAll('.card');
 
 let removeActiveClasses = () => {
