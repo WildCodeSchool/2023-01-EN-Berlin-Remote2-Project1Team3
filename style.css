@@ -227,9 +227,7 @@ hr {
 }
 
 .container {
-  margin: auto;
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
+  margin: 3.5rem auto 3.5rem auto;
   width: 80%;
   max-width: 600px;
   display: flex;
