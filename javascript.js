@@ -1,6 +1,6 @@
-let cardsElement = document.querySelectorAll('.card');
+cardsElement = document.querySelectorAll('.card');
 
-let removeActiveClasses = () => {
+removeActiveClasses = () => {
     cardsElement.forEach(card => {
         card.classList.remove('active');
     });
@@ -27,10 +27,19 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-  slides[slideIndex-1].style.display = "block";
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  if (slides[slideIndex - 1]?.style?.display)
+    slides[slideIndex - 1].style.display = "block";
 }
