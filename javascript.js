@@ -8,8 +8,14 @@ removeActiveClasses = () => {
 
 cardsElement.forEach(card => {
     card.addEventListener('click',() => {
-    removeActiveClasses();
-    card.classList.add('active')  
+      let cardStatus = true;
+      if (card.classList.contains('active')) {
+        cardStatus = false;
+      };
+      removeActiveClasses();
+      if (cardstatus) {
+      card.classList.add('active');
+      };
     });
 });
 
