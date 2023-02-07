@@ -13,13 +13,13 @@ cardsElement.forEach(card => {
         cardStatus = false;
       };
       removeActiveClasses();
-      if (cardstatus) {
-      card.classList.add('active');
+      if (cardStatus) {
+        card.classList.add('active');
       };
     });
 });
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
