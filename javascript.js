@@ -19,33 +19,49 @@ cardsElement.forEach(card => {
     });
 });
 
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  if (n > 0) {
+    slideIndex++;
+  } else {
+    slideIndex--;
+  };
+  showSlides(slideIndex);
+};
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+//function currentSlide(n) {
+//  showSlides(slideIndex = n);
+//};
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+  const slides = document.getElementsByClassName("mySlides"); //gives us 8 slides now
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
+  /*
+  This is the root of all problems.
+  Slides should be dealt with for each card separately.
+  Now they are all in one big heap.
+  Only one slide is shown at a time... for all cards!
+  And when you click the "plusslides" button 4 times the text disappears...
+  ...but appears on the next slide.
+  So buttons also work across cards.
+  */
 
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  if (n >= slides.length) { //slides.length equals 8 now
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = slides.length - 1;
+  };
 
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-  }
+  };
 
-  if (slides[slideIndex - 1]?.style?.display)
-    slides[slideIndex - 1].style.display = "block";
-}
+  slides[slideIndex].style.display = "block";
+
+//  if (slides[slideIndex - 1]?.style?.display) { //the condition is always equal to "none", which is a non-empty string, so it is always truthy
+//    slides[slideIndex - 1].style.display = "block";
+//  };
+
+};
