@@ -14,8 +14,7 @@ body {
 }
 
 header {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5% 5% 0 5%;
 }
 nav {
   display: flex;
@@ -29,6 +28,13 @@ nav {
   justify-content: center;
   margin: auto;
   margin-left: 0;
+}
+
+.logosvg {
+  margin-left: 0.5rem;
+  height: 3rem;
+  filter: invert(88%) sepia(62%) saturate(4160%) hue-rotate(190deg)
+    brightness(111%) contrast(106%);
 }
 
 .dropdown {
@@ -228,8 +234,9 @@ hr {
 
 .container {
   margin: 3.5rem auto 3.5rem auto;
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 400px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -239,13 +246,13 @@ hr {
 
 .container > * {
   padding: 1.5rem;
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
 }
 
 .container img {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
   filter: invert(88%) sepia(62%) saturate(4160%) hue-rotate(190deg)
     brightness(111%) contrast(106%);
 }
@@ -254,8 +261,8 @@ hr {
   border-radius: 50%;
   /* background-color: var(--color-light); */
   margin: 0.5rem;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 .img1,
