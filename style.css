@@ -368,15 +368,19 @@ h2 {
 }
 
 .photocircle {
-  object-fit: none;
-  position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  margin-left: 50%;
+  object-fit:contain;
+  position:relative;
+  width: 40%;
   margin-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
   opacity: 0.5;
-}
+    --s: 10px; /* control the size */
+    border: calc(2*var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
+  }
 
 .slideshow-container {
   margin-top: 30px;
