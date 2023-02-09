@@ -1,17 +1,5 @@
-initialiseSlides = () => {
-  //selecting all the slides for all cards
-  const slidesElement = document.querySelectorAll(".slideshow-container > div");
-  for (let i = 0; i < slidesElement.length; i++) {
-    slidesElement[i].style.display = "none";
-  };
-};
-
-initialiseSlides();
-
-//activeSlides array has to be stored globally
+//activeSlides and cardsElement have to be stored globally
 const activeSlides = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-
-//cardsElement has to be stored globally
 const cardsElement = document.querySelectorAll(".card");
 
 initialiseCards = () => {
@@ -66,6 +54,9 @@ function slideTheShow (direction, slideshowIndex) {
   // so cardNumber is equal to slideshowIndex ("card1" corresponds to ".mySlides1" etc.)
   const className = ".mySlides" + slideshowIndex;
   const slides = document.querySelectorAll(className);
+  if (direction === 0) {
+    console.log(`card ${slideshowIndex} has ${slides.length} slides`);
+  };
 
   // First we turn off the currently active slide
 
