@@ -317,26 +317,49 @@ h2 {
 /* This is Lisas Part*/
 
 .cardscontainer {
-  width: 80%;
+  position: relative;
+  width: 100%;
   margin: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin-top: 100px;
-  width: 1;
-  height: 550px;
+  width: auto;
+  height: 730px;
+  flex: 1 1 300px;
   border-radius: 40px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 20px;
   cursor: pointer;
   background-color: var(--color-very-light);
   justify-content: flex-start;
+  align-items: center;
   text-align: left;
   transition: all 0.5s linear;
   overflow: hidden;
+  max-width: 50%;
+}
+.introContainer {
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cardsmall {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card h2 {
@@ -364,29 +387,27 @@ h2 {
 }
 
 .active {
-  height: 800px;
+  height: 860px;
+  z-index: 1;
 }
 
 .photocircle {
-  object-fit:contain;
-  position:relative;
-  width: 40%;
-  margin-top: 20px;
-  margin-left:auto;
-  margin-right:auto;
-  opacity: 0.5;
-    --s: 10px; /* control the size */
-    border: calc(2*var(--s)) solid #0000;
-    outline: 1px solid #000;
-    outline-offset: calc(-1*var(--s));
-    background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
-  }
-
-.slideshow-container {
-  margin-top: 30px;
+  object-fit: cover;
   position: relative;
+  width: 38%;
+  height: 240px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
+  --s: 10px; /* control the size */
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
 }
 
+/* Next & previous buttons */
 .mySlides {
   display: none;
   padding: 50px;
@@ -394,28 +415,35 @@ h2 {
   font-style: italic;
 }
 
-/* Next & previous buttons */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+}
+
 .prev,
 .next {
-  cursor: pointer;
   position: absolute;
-  top: 50%;
+  cursor: pointer;
+  height: 30px;
   width: auto;
-  margin-top: -30px;
   padding: 16px;
   color: #888;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 2;
 }
-
 /* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
+.prev {
+  bottom: 25px;
+  left: 10px;
 }
-
+.next {
+  bottom: 25px;
+  right: 10px;
+}
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
