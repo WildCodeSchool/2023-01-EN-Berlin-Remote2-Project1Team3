@@ -53,8 +53,14 @@ function slideTheShow(direction, slideshowIndex) {
   // In our HTML file the slides have a class ending with a number of the slideshow, like ".mySlides2"
   // Neither slide nor card numbers are zero indexed,
   // so cardNumber is equal to slideshowIndex ("card1" corresponds to ".mySlides1" etc.)
-  const className = ".mySlides" + slideshowIndex;
-  const slides = document.querySelectorAll(className);
+  const nodeParent = 
+    document.querySelector(`#card${slideshowIndex}`);
+  const slides =
+     nodeParent.querySelectorAll("div[class^='mySlides']");
+
+  // const className = ".mySlides" + slideshowIndex;
+  // const slides = document.querySelectorAll(className);
+
   if (direction === 0) {
     console.log(`card ${slideshowIndex} has ${slides.length} slides`);
   }
