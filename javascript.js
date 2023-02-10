@@ -1,26 +1,26 @@
-//activeSlides and cardsElement have to be stored globally
 const activeSlides = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 const cardsElement = document.querySelectorAll(".card");
 
 initialiseCards = () => {
-  cardsElement.forEach(card => {
-
+  cardsElement.forEach((card) => {
+    console.log("Clicked");
     // Expanding and collapsing the card
 
-    card.addEventListener("click",() => {
+    card.addEventListener("click", () => {
+      console.log("Card is clicked");
       let cardStatus = true;
       if (card.classList.contains("active")) {
         cardStatus = false;
-      };
-        
+      }
+
       //Remove active classes - previously done by removeActiveClasses().
-      cardsElement.forEach(card => {
-          card.classList.remove("active");
+      cardsElement.forEach((card) => {
+        card.classList.remove("active");
       });
 
       if (cardStatus) {
         card.classList.add("active");
-      };
+      }
     });
 
     // Dealing with the slides
@@ -45,7 +45,7 @@ initialiseCards = () => {
   });
 };
 
-function slideTheShow (direction, slideshowIndex) {
+function slideTheShow(direction, slideshowIndex) {
   //This function is called for each card!
 
   // Before we start, we select the slides relevant to the particular slideshow.
@@ -56,7 +56,7 @@ function slideTheShow (direction, slideshowIndex) {
   const slides = document.querySelectorAll(className);
   if (direction === 0) {
     console.log(`card ${slideshowIndex} has ${slides.length} slides`);
-  };
+  }
 
   // First we turn off the currently active slide
 
@@ -77,11 +77,11 @@ function slideTheShow (direction, slideshowIndex) {
     activeSlides[slideshowIndex - 1] = 0;
   } else if (activeSlides[slideshowIndex - 1] < 0) {
     activeSlides[slideshowIndex - 1] = 3;
-  };
+  }
 
   // Now we turn on the new slide (the activeSlides array has just been updated)
 
   slides[activeSlides[slideshowIndex - 1]].style.display = "block";
-};
+}
 
 initialiseCards();
