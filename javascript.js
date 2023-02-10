@@ -12,7 +12,16 @@ initialiseCards = () => {
           card.classList.remove("active");
       });
       //Expand the card that was clicked
-      card.classList.add("active");
+      if (card.classList.contains("closeMe")) {
+        card.classList.remove("closeMe");
+      } else {
+        card.classList.add("active");
+      }
+    });
+
+    const closeButton = card.querySelector(".collapse");
+    closeButton.addEventListener("click", () => {
+      card.classList.add("closeMe");
     });
 
     // Dealing with the slides
