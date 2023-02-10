@@ -359,7 +359,7 @@ h2 {
   padding: 20px;
   width: auto;
   min-width: 17rem;
-  height: 730px;
+  height: 370px;
   flex: 1 1 300px;
   border-radius: 40px;
   margin: 20px;
@@ -384,6 +384,24 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.collapse-button-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.collapse {
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+  width: auto;
+  padding: 5px;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 40px;
 }
 
 .card h2 {
@@ -411,7 +429,7 @@ h2 {
 }
 
 .active {
-  height: 1200px;
+  height: 890px;
   z-index: 1;
 }
 
@@ -419,7 +437,7 @@ h2 {
   object-fit: cover;
   position: relative;
   width: 38%;
-  height: 240px;
+  height: 200px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -448,9 +466,12 @@ h2 {
 }
 
 .slideshow-container {
+  display: block;
   position: relative;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 5px;
+  align-content: center;
+  justify-content: center;
 }
 
 .prev,
@@ -459,13 +480,13 @@ h2 {
   cursor: pointer;
   height: 30px;
   width: auto;
-  padding: 16px;
+  padding: 5px;
+  margin-bottom: 90px;
   color: #888;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  z-index: 2;
 }
 /* Position the "next button" to the right */
 .prev {
