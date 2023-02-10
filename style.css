@@ -312,6 +312,31 @@ h2 {
   font-style: italic;
 }
 
+.button {
+  height: 50px;
+  width: 50px;
+}
+
+#button1 {
+  background-color: #d4b9ff;
+}
+
+#button2 {
+  background-color: #acddf3;
+}
+
+#button3 {
+  background-color: #ffc0c0;
+}
+
+#button4 {
+  background-color: #71bbb6;
+}
+
+#button5 {
+  background-color: #0378a6;
+}
+
 /* This is Lisas Part*/
 
 .cardscontainer {
