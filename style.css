@@ -433,6 +433,10 @@ h2 {
   z-index: 1;
 }
 
+.active img {
+  opacity: 1;
+}
+
 .photocircle {
   object-fit: cover;
   position: relative;
