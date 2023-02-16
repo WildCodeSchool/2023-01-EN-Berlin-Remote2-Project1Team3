@@ -341,15 +341,13 @@ h2 {
 
 .cardscontainer {
   position: relative;
-
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin: 100px 5% 200px 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 1170px;
 }
 
 .card {
@@ -370,7 +368,7 @@ h2 {
   text-align: left;
   transition: all 0.5s linear;
   overflow: hidden;
-  max-width: 50%;
+  /*max-width: 50%; */
 }
 .introContainer {
   padding-left: 45px;
@@ -717,5 +715,9 @@ h2 {
   .meetus > p {
     font-style: italic;
     font-size: 1.1rem;
+  }
+
+  .cardscontainer h2 {
+    font-size: 3rem;
   }
 }
