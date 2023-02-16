@@ -5,6 +5,8 @@
   --color-very-light: #faeaff;
   --color-white: #ffffff;
   --color-card: #faeaff;
+  --svg-filters: invert(88%) sepia(62%) saturate(4160%) hue-rotate(190deg)
+    brightness(111%) contrast(106%);
 }
 
 * {
@@ -35,8 +37,7 @@ nav {
 .logosvg {
   margin-left: 0.5rem;
   height: 3rem;
-  filter: invert(88%) sepia(62%) saturate(4160%) hue-rotate(190deg)
-    brightness(111%) contrast(106%);
+  filter: var(--svg-filters);
 }
 
 .dropdown {
@@ -253,8 +254,7 @@ hr {
 .container img {
   height: 70px;
   width: 70px;
-  filter: invert(88%) sepia(62%) saturate(4160%) hue-rotate(190deg)
-    brightness(111%) contrast(106%);
+  filter: var(--svg-filters);
 }
 
 .container div {
