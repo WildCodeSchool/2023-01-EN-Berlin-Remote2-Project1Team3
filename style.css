@@ -508,6 +508,21 @@ h2 {
   font-size: 40px;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% 5% 2% 5%;
+}
+.footertext {
+  position: relative;
+}
+
+.footertext p {
+  bottom: 0;
+  color: var(--color-very-light);
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
@@ -628,7 +643,6 @@ h2 {
   }
 
   .welcometext > p {
-    margin-top: ;
     font-size: 1.2rem;
     width: 60%;
     margin-left: 20px;
@@ -651,6 +665,12 @@ h2 {
   .container div {
     height: 80px;
     width: 80px;
+  }
+
+  .card {
+    max-width: 250px;
+    padding-left: 10px;
+    padding-left: 10px;
   }
 }
 
