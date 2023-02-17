@@ -352,6 +352,11 @@ h2 {
   max-width: 1170px;
 }
 
+.cardscontainer h2 {
+  font-size: 2rem;
+  margin-bottom: 100px;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -672,6 +677,11 @@ footer {
     padding-left: 10px;
     padding-left: 10px;
   }
+
+  .cardscontainer h2 {
+    font-size: 2rem;
+    margin-bottom: 55px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -745,5 +755,6 @@ footer {
   }
   .cardscontainer h2 {
     font-size: 3rem;
+    margin-bottom: 20px;
   }
 }
