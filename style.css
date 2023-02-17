@@ -457,7 +457,7 @@ h2 {
   padding: 50px;
   text-align: center;
   font-style: italic;
-  min-height: 3lh;
+  height: 4lh;
 }
 
 .slideshow-container {
@@ -467,7 +467,7 @@ h2 {
   margin-top: 5px;
   align-content: center;
   justify-content: center;
-  height: 3lh;
+  height: 4lh;
 }
 
 .prev,
@@ -502,7 +502,7 @@ h2 {
 }
 
 .collapse-button-container {
-  display: flex;
+  display: absolute;
   position: relative;
   justify-content: center;
   width: 100%;
@@ -516,6 +516,9 @@ h2 {
   width: auto;
   padding: 5px;
   font-size: 40px;
+  margin-bottom: 10px;
+  bottom: 0px;
+  left: 40%;
 }
 
 footer {
