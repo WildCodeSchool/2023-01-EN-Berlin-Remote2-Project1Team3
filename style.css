@@ -379,7 +379,7 @@ h2 {
 }
 .introContainer {
   padding-left: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   width: 90%;
@@ -461,7 +461,7 @@ h2 {
 }
 
 .slideshow-container {
-  display: block;
+  display: none;
   position: relative;
   width: 100%;
   margin-top: 5px;
