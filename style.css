@@ -377,7 +377,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
+
 .cardsmall {
   position: relative;
   width: 100%;
@@ -392,6 +394,7 @@ h2 {
 
 .card p {
   line-height: 15px;
+  word-break: break-word;
 }
 
 .card a {
@@ -449,6 +452,7 @@ h2 {
   padding: 50px;
   text-align: center;
   font-style: italic;
+  min-height: 3lh;
 }
 
 .slideshow-container {
@@ -458,6 +462,7 @@ h2 {
   margin-top: 5px;
   align-content: center;
   justify-content: center;
+  height: 3lh;
 }
 
 .prev,
