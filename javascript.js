@@ -7,6 +7,8 @@ for (let i = 0; i < cardsElement.length; i++) {
 initialiseCards = () => {
   for (let cardNumber = 0; cardNumber < cardsElement.length; cardNumber++) {
     let card = cardsElement[cardNumber];
+    card.querySelector(".introContainer").style.display = "none";
+    card.querySelector(".slideshow-container").style.display = "none";
 
     // Expanding and collapsing the card
 
