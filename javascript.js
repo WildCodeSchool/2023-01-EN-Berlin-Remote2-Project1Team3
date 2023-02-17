@@ -14,9 +14,13 @@ initialiseCards = () => {
       //Collapse all cards
       cardsElement.forEach(card => {
           card.classList.remove("active");
+          card.querySelector(".introContainer").style.display = "none";
+          card.querySelector(".slideshow-container").style.display = "none";
       });
       //Expand the card that was clicked
       card.classList.add("active");
+      card.querySelector(".introContainer").style.display = "block";
+      card.querySelector(".slideshow-container").style.display = "block";
     });
 
     const closeButton = card.querySelector(".collapse");
@@ -25,6 +29,8 @@ initialiseCards = () => {
       closeButton.addEventListener("click", (event) => {
         event.stopPropagation();
         card.classList.remove("active");
+        card.querySelector(".introContainer").style.display = "none";
+        card.querySelector(".slideshow-container").style.display = "none";
       });
     } else {
       console.log(`No close button in card ${cardNumber + 1}`);
